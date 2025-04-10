@@ -1,13 +1,9 @@
 {
-  "name": "@pepsi/storybuk",
-  "private": true,
-  "version": "0.0.0",
-  "main": "dist/main.js",
-  "module": "dist/main.js",
-  "types": "dist/main.d.ts",
+  "name": "pepsi-storybuk",
+  "version": "1.0.0",
   "files": [
     "dist",
-    "README.md"
+    "storybook-static"
   ],
   "scripts": {
     "dev": "vite",
@@ -16,7 +12,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build && npm run build-storybook"
   },
   "dependencies": {
     "react": "^19.0.0",
